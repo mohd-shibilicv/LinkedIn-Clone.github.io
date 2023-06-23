@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/LeftSidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/RightSidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    
+    <!-- -----------------------  NAVBAR START ---------------------------- -->
+    <nav class="navbar">
+        <div class="navbar__left">
+            <a href="#" class="navbar__logo">
+                <img src="images/logo.png" alt="LOGO" />
+            </a>
+
+            <div class="navbar__search-box">
+                <img src="images/search.png" alt="Search" />
+                <input type="text" placeholder="Search" />
+            </div>
+        </div>
+        <div class="navbar__center">
+            <ul>
+                <li><a href="#" class="is-active"><img src="images/home.png" alt="Home"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png" alt="Home"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt="Home"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt="Home"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt="Home"><span>Notifications <div>24</div>
+                </span></a></li>
+            </ul>
+        </div>
+
+        <div class="premium">
+            <p><u>Try Premium for free</u></p>
+        </div>
+
+        <div class="navbar__right">
+            <div class="online">
+                <img src="images/user-1.png" alt="User" class="navbar__profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <div class="profile__menu-wrap" id="profile__menu">
+            <div class="profile__menu">
+                <div class="user-info">
+                    <img src="images/user-1.png" alt="" />
+                    <div>
+                        <h3>Mohammed Shibili cv</h3>
+                        <a href="#">See your Profile</a>
+                    </div>
+                </div>
+                <hr />
+                <a href="#" class="profile__menu-link">
+                    <img src="images/feedback.png" alt="" />
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <hr />
+                <a href="#" class="profile__menu-link">
+                    <img src="images/setting.png" alt="" />
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <hr />
+                <a href="#" class="profile__menu-link">
+                    <img src="images/help.png" alt="" />
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <hr />
+                <a href="#" class="profile__menu-link">
+                    <img src="images/display.png" alt="" />
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <hr />
+                <a href="#" class="profile__menu-link">
+                    <img src="images/logout.png" alt="" />
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <!-- -----------------------  NAVBAR END ---------------------------- -->
+
+    <div class="container">
+
+        <div class="left__sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/cover-pic.png" alt="Cover Pic" width="100%" />
+
+                <div class="sidebar-profile-info">
+                    <img src="images/user-1.png" alt="User" />
+                    <div class="left__sidebar-header">
+                        <h1>Shibili cv</h1>
+                        <h3>Python Developer</h3>
+                    </div>
+                    <ul>
+                        <li>Your Profile Views<span>120</span></li>
+                        <li>Your Post Views<span>820</span></li>
+                        <li>Your Connections<span>60</span></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar__profile-link">
+                    <a href="#"><img src="images/items.png" alt="Items">My Items</a>
+                    <a href="#"><img src="images/premium.png" alt="Try Premium">Try Premium</a>
+                </div>
+
+            </div>
+            
+            <div class="sidebar__activity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/recent.png" alt="recent">Web Development</a>
+                <a href="#"><img src="images/recent.png" alt="recent">User Interface</a>
+                <a href="#"><img src="images/recent.png" alt="recent">Learn Python Online</a>
+                <a href="#"><img src="images/recent.png" alt="recent">Code Better</a>
+                <a href="#"><img src="images/recent.png" alt="recent">Django</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/group.png" alt="Hash">Django</a>
+                <a href="#"><img src="images/group.png" alt="Hash">Python</a>
+                <a href="#"><img src="images/group.png" alt="Hash">Full Stack</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hashtag.png" alt="Hash">pythondevelopers</a>
+                <a href="#"><img src="images/hashtag.png" alt="Hash">djangodevelopment</a>
+                <a href="#"><img src="images/hashtag.png" alt="Hash">fullstackdevelopment</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main__content">
+            <div class="create__post">
+                <div class="create__post-input">
+                    <img src="images/user-1.png" alt="user" />
+                    <textarea rows="2" placeholder="Write a Post"></textarea>
+                </div>
+                <div class="create__post-links">
+                    <li><img src="images/photo.png" alt="Photo">Photo</li>
+                    <li><img src="images/video.png" alt="Video">Video</li>
+                    <li><img src="images/event.png" alt="Event">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr />
+                <p>Sort by: <span>Top <img src="images/down-arrow.png" alt="down"></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post__author">
+                    <img src="images/user-3.png" alt="" />
+                    <div class="post__author-info">
+                        <h1>Lional Messi</h1>
+                        <small>Professional Footballer</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis voluptatum sequi! Omnis rem quod id quos ab distinctio optio at? Ratione, ipsa quis dolores ad est voluptas. Ab, ratione.</p>
+
+                <img src="images/post-image-1.png" alt="post" width="100%" />
+
+                <div class="post__stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="Like" />
+                        <img src="images/love.png" alt="Heart" />
+                        <img src="images/clap.png" alt="clap" />
+                        <span class="liked-users">Christiano and 1,100 others</span>
+                    </div>
+                    <div>
+                        <span>1,000 comments &middot; 459 shares</span>
+                    </div>
+                </div>
+
+                <div class="post__activity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="post__activity-user-icon" />
+                        <img src="images/down-arrow.png" alt="" class="post__activity-arrow-icon" />
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/love.png" alt="Like" />
+                        <span>Like</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/comment.png" alt="clap" />
+                        <span>Comment</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/share.png" alt="clap" />
+                        <span>Share</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/send.png" alt="Like" />
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post__author">
+                    <img src="images/user-2.png" alt="" />
+                    <div class="post__author-info">
+                        <h1>Cristiano Ronaldo</h1>
+                        <small>Professional Footballer</small>
+                        <small>3 hours ago</small>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis voluptatum sequi! Omnis rem quod id quos ab distinctio optio at? Ratione, ipsa quis dolores ad est voluptas. Ab, ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ex, debitis atque quasi vero iusto.</p>
+
+                <img src="images/post-image-2.png" alt="post" width="100%" />
+
+                <div class="post__stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="Like" />
+                        <img src="images/love.png" alt="Heart" />
+                        <img src="images/clap.png" alt="clap" />
+                        <span class="liked-users">Lional Messi and 1,100 others</span>
+                    </div>
+                    <div>
+                        <span>1,000 comments &middot; 459 shares</span>
+                    </div>
+                </div>
+
+                <div class="post__activity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="post__activity-user-icon" />
+                        <img src="images/down-arrow.png" alt="" class="post__activity-arrow-icon" />
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/love.png" alt="Like" />
+                        <span>Like</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/comment.png" alt="clap" />
+                        <span>Comment</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/share.png" alt="clap" />
+                        <span>Share</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/send.png" alt="Like" />
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post__author">
+                    <img src="images/user-4.png" alt="" />
+                    <div class="post__author-info">
+                        <h1>Mo Salah</h1>
+                        <small>Professional Footballer</small>
+                        <small>5 hours ago</small>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis voluptatum sequi! Omnis rem quod id quos ab distinctio optio at? Ratione, ipsa quis dolores ad est voluptas. Ab, ratione.</p>
+
+                <img src="images/post-image-4.png" alt="post" width="100%" />
+
+                <div class="post__stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="Like" />
+                        <img src="images/love.png" alt="Heart" />
+                        <img src="images/clap.png" alt="clap" />
+                        <span class="liked-users">Neymar Jr. and 1,100 others</span>
+                    </div>
+                    <div>
+                        <span>1,000 comments &middot; 459 shares</span>
+                    </div>
+                </div>
+
+                <div class="post__activity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="post__activity-user-icon" />
+                        <img src="images/down-arrow.png" alt="" class="post__activity-arrow-icon" />
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/love.png" alt="Like" />
+                        <span>Like</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/comment.png" alt="clap" />
+                        <span>Comment</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/share.png" alt="clap" />
+                        <span>Share</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/send.png" alt="Like" />
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post__author">
+                    <img src="images/user-5.png" alt="" />
+                    <div class="post__author-info">
+                        <h1>Neymar Jr.</h1>
+                        <small>Professional Footballer</small>
+                        <small>9 hours ago</small>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis voluptatum sequi! Omnis rem quod id quos ab distinctio optio at? Ratione, ipsa quis dolores ad est voluptas. Ab, ratione.</p>
+
+                <img src="images/post-image-3.png" alt="post" width="100%" />
+
+                <div class="post__stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="Like" />
+                        <img src="images/love.png" alt="Heart" />
+                        <img src="images/clap.png" alt="clap" />
+                        <span class="liked-users">Mo Salah and 1,100 others</span>
+                    </div>
+                    <div>
+                        <span>1,000 comments &middot; 459 shares</span>
+                    </div>
+                </div>
+
+                <div class="post__activity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="post__activity-user-icon" />
+                        <img src="images/down-arrow.png" alt="" class="post__activity-arrow-icon" />
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/love.png" alt="Like" />
+                        <span>Like</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/comment.png" alt="clap" />
+                        <span>Comment</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/share.png" alt="clap" />
+                        <span>Share</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/send.png" alt="Like" />
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post__author">
+                    <img src="images/user-5.png" alt="" />
+                    <div class="post__author-info">
+                        <h1>Neymar Jr.</h1>
+                        <small>Professional Footballer</small>
+                        <small>9 hours ago</small>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis voluptatum sequi! Omnis rem quod id quos ab distinctio optio at? Ratione, ipsa quis dolores ad est voluptas. Ab, ratione.</p>
+
+                <img src="images/post-image-3.png" alt="post" width="100%" />
+
+                <div class="post__stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="Like" />
+                        <img src="images/love.png" alt="Heart" />
+                        <img src="images/clap.png" alt="clap" />
+                        <span class="liked-users">Mo Salah and 1,100 others</span>
+                    </div>
+                    <div>
+                        <span>1,000 comments &middot; 459 shares</span>
+                    </div>
+                </div>
+
+                <div class="post__activity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="post__activity-user-icon" />
+                        <img src="images/down-arrow.png" alt="" class="post__activity-arrow-icon" />
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/love.png" alt="Like" />
+                        <span>Like</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/comment.png" alt="clap" />
+                        <span>Comment</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/share.png" alt="clap" />
+                        <span>Share</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/send.png" alt="Like" />
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post__author">
+                    <img src="images/user-5.png" alt="" />
+                    <div class="post__author-info">
+                        <h1>Neymar Jr.</h1>
+                        <small>Professional Footballer</small>
+                        <small>9 hours ago</small>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis voluptatum sequi! Omnis rem quod id quos ab distinctio optio at? Ratione, ipsa quis dolores ad est voluptas. Ab, ratione.</p>
+
+                <img src="images/post-image-3.png" alt="post" width="100%" />
+
+                <div class="post__stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="Like" />
+                        <img src="images/love.png" alt="Heart" />
+                        <img src="images/clap.png" alt="clap" />
+                        <span class="liked-users">Mo Salah and 1,100 others</span>
+                    </div>
+                    <div>
+                        <span>1,000 comments &middot; 459 shares</span>
+                    </div>
+                </div>
+
+                <div class="post__activity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="post__activity-user-icon" />
+                        <img src="images/down-arrow.png" alt="" class="post__activity-arrow-icon" />
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/love.png" alt="Like" />
+                        <span>Like</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/comment.png" alt="clap" />
+                        <span>Comment</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/share.png" alt="clap" />
+                        <span>Share</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/send.png" alt="Like" />
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post__author">
+                    <img src="images/user-5.png" alt="" />
+                    <div class="post__author-info">
+                        <h1>Neymar Jr.</h1>
+                        <small>Professional Footballer</small>
+                        <small>9 hours ago</small>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis voluptatum sequi! Omnis rem quod id quos ab distinctio optio at? Ratione, ipsa quis dolores ad est voluptas. Ab, ratione.</p>
+
+                <img src="images/post-image-3.png" alt="post" width="100%" />
+
+                <div class="post__stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="Like" />
+                        <img src="images/love.png" alt="Heart" />
+                        <img src="images/clap.png" alt="clap" />
+                        <span class="liked-users">Mo Salah and 1,100 others</span>
+                    </div>
+                    <div>
+                        <span>1,000 comments &middot; 459 shares</span>
+                    </div>
+                </div>
+
+                <div class="post__activity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="post__activity-user-icon" />
+                        <img src="images/down-arrow.png" alt="" class="post__activity-arrow-icon" />
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/love.png" alt="Like" />
+                        <span>Like</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/comment.png" alt="clap" />
+                        <span>Comment</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/share.png" alt="clap" />
+                        <span>Share</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/send.png" alt="Like" />
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post__author">
+                    <img src="images/user-5.png" alt="" />
+                    <div class="post__author-info">
+                        <h1>Neymar Jr.</h1>
+                        <small>Professional Footballer</small>
+                        <small>9 hours ago</small>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis voluptatum sequi! Omnis rem quod id quos ab distinctio optio at? Ratione, ipsa quis dolores ad est voluptas. Ab, ratione.</p>
+
+                <img src="images/post-image-3.png" alt="post" width="100%" />
+
+                <div class="post__stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="Like" />
+                        <img src="images/love.png" alt="Heart" />
+                        <img src="images/clap.png" alt="clap" />
+                        <span class="liked-users">Mo Salah and 1,100 others</span>
+                    </div>
+                    <div>
+                        <span>1,000 comments &middot; 459 shares</span>
+                    </div>
+                </div>
+
+                <div class="post__activity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="post__activity-user-icon" />
+                        <img src="images/down-arrow.png" alt="" class="post__activity-arrow-icon" />
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/love.png" alt="Like" />
+                        <span>Like</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/comment.png" alt="clap" />
+                        <span>Comment</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/share.png" alt="clap" />
+                        <span>Share</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/send.png" alt="Like" />
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post__author">
+                    <img src="images/user-5.png" alt="" />
+                    <div class="post__author-info">
+                        <h1>Neymar Jr.</h1>
+                        <small>Professional Footballer</small>
+                        <small>9 hours ago</small>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corporis voluptatum sequi! Omnis rem quod id quos ab distinctio optio at? Ratione, ipsa quis dolores ad est voluptas. Ab, ratione.</p>
+
+                <img src="images/post-image-3.png" alt="post" width="100%" />
+
+                <div class="post__stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="Like" />
+                        <img src="images/love.png" alt="Heart" />
+                        <img src="images/clap.png" alt="clap" />
+                        <span class="liked-users">Mo Salah and 1,100 others</span>
+                    </div>
+                    <div>
+                        <span>1,000 comments &middot; 459 shares</span>
+                    </div>
+                </div>
+
+                <div class="post__activity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="post__activity-user-icon" />
+                        <img src="images/down-arrow.png" alt="" class="post__activity-arrow-icon" />
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/love.png" alt="Like" />
+                        <span>Like</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/comment.png" alt="clap" />
+                        <span>Comment</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/share.png" alt="clap" />
+                        <span>Share</span>
+                    </div>
+                    <div class="post__activity-link">
+                        <img src="images/send.png" alt="Like" />
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="right__sidebar">
+            <div class="sidebar__news">
+                <img src="images/more.png" alt="news" class="info-icon" />
+                <h3>Trending News</h3>
+                <ul>
+                    <li><a href="#">More Indians feel proud at work</a></li>
+                    <span>1d ago &middot; 10,212 readers</span>
+                    <li><a href="#">Global carmakers eye Indian EV push</a></li>
+                    <span>1d ago &middot; 10,212 readers</span>
+                    <li><a href="#">India's tech talent powers industries</a></li>
+                    <span>2d ago &middot; 10,212 readers</span>
+                    <li><a href="#">A must-have Pride Month conversation</a></li>
+                    <span>2d ago &middot; 10,212 readers</span>
+                </ul>
+
+                <div class="read__more">
+                    <a href="#" class="read-more-link">Show more <img src="images/down-arrow.png" alt=""></a>
+                </div>
+                
+            </div>
+
+            <div class="sidebar__ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of web design</p>
+                <img src="images/user-1.png" alt="">
+                <img src="images/mi-logo.png" alt="">
+                <b>Brand and Demand in Xiamoi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar__useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessiblity</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copyright__msg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 14" data-supported-dps="56x14" fill="#045be6" class="mercado-match" width="56" height="14" focusable="false">
+                        <g>
+                          <path class="background-mercado" d="M22.1 8.2l3.09 3.8h-2.44L20 8.51V12h-2V2h2v5.88L22.54 5h2.55zm-8-3.4A2.71 2.71 0 0011.89 6V5H10v7h2V8.73a1.74 1.74 0 011.66-1.93C14.82 6.8 15 7.94 15 8.73V12h2V8.29c0-2.2-.73-3.49-2.86-3.49zM32 8.66a4.22 4.22 0 010 .44h-5.25v.07a1.79 1.79 0 001.83 1.43 2.51 2.51 0 001.84-.69l1.33 1a4.31 4.31 0 01-3.25 1.29 3.49 3.49 0 01-3.7-3.75 3.58 3.58 0 013.76-3.65C30.44 4.8 32 6.13 32 8.66zm-1.86-.86a1.46 1.46 0 00-1.59-1.4 1.64 1.64 0 00-1.8 1.4zM2 2H0v10h6v-2H2zm36 0h2v10h-1.89v-.7a2.44 2.44 0 01-2 .9 3.41 3.41 0 01-3.31-3.7 3.36 3.36 0 013.3-3.7 2.62 2.62 0 011.9.7zm.15 6.5a1.63 1.63 0 00-1.62-1.85A1.76 1.76 0 0034.9 8.5a1.76 1.76 0 001.63 1.85 1.63 1.63 0 001.62-1.85zM8 1.8A1.27 1.27 0 006.75 3a1.25 1.25 0 002.5 0A1.27 1.27 0 008 1.8zM7 12h2V5H7zM56 1v12a1 1 0 01-1 1H43a1 1 0 01-1-1V1a1 1 0 011-1h12a1 1 0 011 1zM46 5h-2v7h2zm.25-2a1.25 1.25 0 00-2.5 0 1.25 1.25 0 002.5 0zM54 8.29c0-2.2-.73-3.49-2.86-3.49A2.71 2.71 0 0048.89 6V5H47v7h2V8.73a1.74 1.74 0 011.66-1.93C51.82 6.8 52 7.94 52 8.73V12h2z"></path>
+                        </g>
+                    </svg>
+                    <p>&#169; 2023. All rights reserved</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        let profileMenu = document.getElementById("profile__menu");
+
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>

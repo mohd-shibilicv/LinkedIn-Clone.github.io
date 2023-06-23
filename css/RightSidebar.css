@@ -1,0 +1,132 @@
+.right__sidebar {
+    flex-basis: 23%;
+    align-self: flex-start;
+    overflow-y: auto;
+    position: sticky;
+    top: 73px;
+}
+
+.sidebar__news {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.sidebar__news ul {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.sidebar__news ul li a {
+    color: #222222ec;
+}
+
+.info-icon {
+    width: 15px;
+    float: right;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.sidebar__news h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0 30px;
+}
+
+.sidebar__news a {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: -3px;
+}
+
+.sidebar__news span {
+    font-size: 12px;
+}
+
+.sidebar__news .read-more-link {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    transition: font-weight 0.1s;
+}
+
+.sidebar__news .read-more-link:hover {
+    font-weight: 550;
+}
+
+.sidebar__news .read-more-link img {
+    width: 12px;
+}
+
+.sidebar__ad {
+    background: #fff;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 12px 0;
+    font-size: 12px;
+}
+
+.sidebar__ad img {
+    width: 60px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+.sidebar__ad small {
+    float: right;
+    font-weight: 500;
+}
+
+.sidebar__ad p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sidebar__ad b {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.ad-link {
+    display: inline-block;
+    border: 1px solid #045be6;
+    color: #045be6;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    margin: 20px auto 10px;
+}
+
+.sidebar__useful-links {
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.sidebar__useful-links a {
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 20px;
+}
+
+.copyright__msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.copyright__msg p {
+    margin-left: 5px;
+}
+.copyright__msg img {
+    width: 18px;
+    margin-right: 4px;
+}
